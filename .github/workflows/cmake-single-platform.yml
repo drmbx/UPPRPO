@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: cd
-      run: cd ../CircularBuffer & ls
+      run: cd .. & cd ./CircularBuffer & ls
       
       
     - name: Configure CMake
