@@ -1,4 +1,4 @@
-name: CMake on multiple platforms
+name: GoogleTest
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [windows-latest, macOS-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
     runs-on: ${{ matrix.os }}
 
     steps:
